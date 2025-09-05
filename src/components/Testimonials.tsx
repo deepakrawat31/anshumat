@@ -23,7 +23,7 @@ export default function Testimonials({ comments }: { comments: Comments }) {
         {comments.map((comment) => (
           <li key={comment.id}>
             <button
-              className={`text-on-surface cursor-pointer py-4 transition-all duration-300 ${comment.id === activeTestimony ? "bg-primary px-8" : "bg-surface py-4"} `}
+              className={`text-on-surface cursor-pointer p-4 transition-all duration-300 ${comment.id === activeTestimony ? "bg-primary px-8" : "bg-surface py-4"} `}
               onClick={() => setActiveTestimony(comment.id)}
             ></button>
           </li>
